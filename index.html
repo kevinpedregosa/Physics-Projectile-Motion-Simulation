@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Physics Projectile Motion Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1><b>Physics Projectile Motion Simulation</b></h1>
+
+    <canvas id="canvas" width="800" height="400"></canvas>
+
+    <div class="controls">
+        <label><b>Angle (degrees, 1 to 89):</b></label>
+        <input type="number" id="angle" value="45" min="1" max="89">
+
+        <label><b>Force (N, 1 to 500):</b></label>
+        <input type="number" id="force" value="250" min="1" max="500">
+
+        <label><b>Ball Mass (kg, 1 to 10):</b></label>
+        <input type="number" id="weight" value="5" min="1" max="10">
+
+        <button onclick="launchBall()"><b>Launch</b></button>
+    </div>
+
+    <p id="stats">
+        <b>
+        Time in Air = <span id="timeAir">0</span>s |
+        Displacement = <span id="disp">0</span>m |
+        Max Velocity = <span id="maxV">0</span>m/s |
+        Avg Velocity = <span id="avgV">0</span>m/s |
+        Acceleration = <span id="accel">-9.81</span>m/s/s
+        </b>
+    </p>
+
+    <p id="physicsExplanation"><b>
+        Projectile motion happens when an object is pushed into the air.
+        It moves forward because of the push and falls downward because of gravity,
+        creating a curved path called a parabola.
+    </b></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

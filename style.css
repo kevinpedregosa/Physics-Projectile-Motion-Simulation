@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+}
+
+canvas {
+  border: 1px solid white;
+  background-color: #000080;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+input[type=number] {
+  padding: 6px;
+  width: 90px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  width: 28px;
+  height: 28px;
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+#stats span {
+  color: #00ff00;
+}
